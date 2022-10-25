@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-bb50bc61c023b837f6cd.js"
+    "url": "webpack-runtime-287730fa136111070860.js"
   },
   {
     "url": "framework-4704efbcb7f53137667f.js"
@@ -36,11 +36,11 @@ self.__precacheManifest = [
     "url": "dc6a8720040df98778fe970bf6c000a41750d3ae-bed3600c46bd5d55af3a.js"
   },
   {
-    "url": "app-9461878311a9aa2fc1f8.js"
+    "url": "app-bc1206f5a38da4ce1697.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "a81cc3e1e4a039ca7b3e075326c68165"
+    "revision": "007d95944d020ab7be640c330d79037a"
   },
   {
     "url": "polyfill-93c7ef2bd9362f5d2424.js"
@@ -160,7 +160,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/Fanhole.github.io/app-9461878311a9aa2fc1f8.js`))) {
+  if (!resources || !(await caches.match(`/Fanhole.github.io/app-bc1206f5a38da4ce1697.js`))) {
     return await fetch(event.request)
   }
 
