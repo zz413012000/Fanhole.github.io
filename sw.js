@@ -27,26 +27,26 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-716d0fbe78eaf0eb4adb.js"
+    "url": "webpack-runtime-887f8c2fda5c2432dbfe.js"
   },
   {
     "url": "framework-4704efbcb7f53137667f.js"
   },
   {
+    "url": "styles.475423fb24ae1a0a9b20.css"
+  },
+  {
     "url": "dc6a8720040df98778fe970bf6c000a41750d3ae-bed3600c46bd5d55af3a.js"
   },
   {
-    "url": "app-bc1206f5a38da4ce1697.js"
+    "url": "app-9b038d29f0cfedc0213d.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "db0367aa7f4840a571fb96492cd9da07"
+    "revision": "f516dd10da7f9a8f8a7a3f2148115144"
   },
   {
     "url": "polyfill-93c7ef2bd9362f5d2424.js"
-  },
-  {
-    "url": "styles.c84a799480dac4dfc776.css"
   },
   {
     "url": "manifest.webmanifest",
@@ -160,7 +160,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/Fanhole.github.io/app-bc1206f5a38da4ce1697.js`))) {
+  if (!resources || !(await caches.match(`/Fanhole.github.io/app-9b038d29f0cfedc0213d.js`))) {
     return await fetch(event.request)
   }
 
